@@ -60,7 +60,7 @@ document.addEventListener("click", (e) => {
 
 function innerContent(period) {
   const frag = document.createDocumentFragment();
-  fetch("https://alejobaez.github.io/frontendmentor-time-tracking-dashboard/")
+  fetch("https://alejobaez.github.io/frontendmentor-time-tracking-dashboard/data.json")
     .then((res) => res.json())
     .then((data) => {
       data.forEach(({ title, timeframes }) => {
