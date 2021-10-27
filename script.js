@@ -13,7 +13,7 @@ const change = (title) => {
 const cardTemplate = ({ name, current, previous, period }) => {
   return `
           <div class="card__img card__img--${name}">
-            <img class="img" src="images/icon-${name}.svg" alt="icon-${name}" />
+            <img class="img" src="./images/icon-${name}.svg" alt="icon-${name}" />
           </div>
           <div class="card__info">
             <div class="card__activity">
@@ -60,7 +60,7 @@ document.addEventListener("click", (e) => {
 
 function innerContent(period) {
   const frag = document.createDocumentFragment();
-  fetch("https://alejobaez.github.io/frontendmentor-time-tracking-dashboard/data.json")
+  fetch("./data.json")
     .then((res) => res.json())
     .then((data) => {
       data.forEach(({ title, timeframes }) => {
