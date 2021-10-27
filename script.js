@@ -13,7 +13,7 @@ const change = (title) => {
 const cardTemplate = ({ name, current, previous, period }) => {
   return `
           <div class="card__img card__img--${name}">
-            <img class="img" src="./images/icon-${name}.svg" alt="icon-${name}" />
+            <img class="img" src="./images/icon-${name.toLowerCase()}.svg" alt="icon-${name}" />
           </div>
           <div class="card__info">
             <div class="card__activity">
